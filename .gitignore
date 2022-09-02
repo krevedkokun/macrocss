@@ -1,0 +1,7 @@
+/.cpcache/
+/.direnv/
+/.envrc
+/.nrepl-port
+/guix.scm
+/channels.scm
+/.clj-kondo/

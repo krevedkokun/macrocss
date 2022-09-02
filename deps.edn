@@ -6,12 +6,14 @@
   thheller/shadow-cljs {:mvn/version "2.14.4"}}
 
  :aliases
- {:test
+ {:docs
+  {:extra-deps {hiccup/hiccup {:mvn/version "2.0.0-alpha2"}}}
+
+  :test
   {:extra-paths ["test"]}
 
   :kaocha
   {:extra-deps {lambdaisland/kaocha {:mvn/version "1.0.732"}}
-   :jvm-opts ^:replace ["-XX:-OmitStackTraceInFastThrow"]
    :main-opts ["-m" "kaocha.runner" "--config-file" "test.edn"]}
 
   :nrepl
